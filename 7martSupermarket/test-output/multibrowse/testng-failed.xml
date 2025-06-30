@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [multibrowse]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="123"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="username" value="admin"/>
+  <test thread-count="5" parallel="classes" name="ChromeTest(failed)">
+    <classes>
+      <class name="Mainproject.HomePageTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- Mainproject.HomePageTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [multibrowse] -->
